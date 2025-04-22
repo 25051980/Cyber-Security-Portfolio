@@ -1,59 +1,75 @@
 # 💼 Personal Finance Tracker – Software Development Assignment
 
-This repository contains a Python application developed as part of the **Software Development** module for the MSc in Cyber Security at **St Mary’s University, Twickenham**.
+This repository contains a Python application developed as part of the **Software Development** module for the **MSc in Cyber Security** at **St Mary’s University, Twickenham**.
 
 ## 📦 Project Overview
 
 The application is a **console-based personal finance tracker**, designed to help users manage financial transactions, track balances, and perform key budgeting tasks.
 
 It demonstrates core software development practices including:
+
 - Modular code design
-- Unit testing
-- Application logic separation
-- Pythonic best practices
+- Object-oriented programming
+- Unit testing with `unittest`
+- Separation of concerns using classes and modules
+- Simple, interactive menu-based interface
 
-## 🧱 Project Structure
+## 📁 Project Structure
 
 ```
-software_development_assignment/
-├── Finance.py               # Main application logic
-├── test_finance_tracker.py # Unit tests for key features
-├── README.md                # Project documentation
+Software-Development-1/
+├── main.py                   # Entry point to run the app
+├── transaction.py            # Defines the Transaction class
+├── budget.py                 # Budget management logic
+├── utils/                    # Utility functions (e.g., input validation)
+├── tests/                    # Unit test files
+├── README.md                 # Project documentation
 ```
 
-## 🧪 Features
+## ▶️ How to Run
 
-- Record income and expenses
-- Display financial summaries
-- Track balances
-- Validate input and enforce clean data entry
+1. **Clone the repository**:
+```bash
+git clone https://github.com/25051980/Software-Development-1.git
+```
 
-## ✅ Testing
+2. **Navigate to the project directory**:
+```bash
+cd Software-Development-1
+```
 
-The module includes unit tests (`test_finance_tracker.py`) to ensure correct and reliable behaviour of the application's core functionalities. Testing was done using Python’s built-in `unittest` framework.
+3. **Run the application**:
+```bash
+python main.py
+```
 
-## 🧠 Academic Context
+> ✅ Ensure Python 3.x is installed on your machine. You can download it from [https://www.python.org](https://www.python.org).
 
-- **Course**: MSc in Cyber Security
-- **Module**: Software Development
-- **Institution**: St Mary’s University, Twickenham
-- **Student**: Samuel Walford
+## ✅ Features
 
-## 🚀 How to Run
+- Add, view, and delete financial transactions
+- Track balance and categorize expenses
+- Create simple budgets and monitor remaining amounts
+- Menu-driven navigation
+- All logic separated into modules for clarity and reuse
+- Includes unit tests for key components
 
-1. Ensure you have Python 3 installed
-2. Run the main script:
+## 🧪 Testing
+
+To run the unit tests:
 
 ```bash
-python Finance.py
+python -m unittest discover tests
 ```
 
-3. Run tests with:
+This will run all test cases inside the `/tests` folder.
 
-```bash
-python -m unittest test_finance_tracker.py
-```
+## 👨‍💻 Author
+
+**Samuel Walford**  
+MSc Cyber Security Candidate, St Mary’s University, Twickenham  
+GitHub: [github.com/25051980](https://github.com/25051980)
 
 ---
 
-📝 *This project highlights key software engineering principles such as testing, modularity, maintainability, and user-focused application design.*
+Feel free to reach out or fork the project if you find it helpful!
