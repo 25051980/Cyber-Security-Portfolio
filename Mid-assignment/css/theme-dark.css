@@ -1,0 +1,26 @@
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.admin-section {
+  background-color: #1e1e1e;
+}
+
+input,
+textarea,
+select {
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+  border-color: #444;
+}
+
+.nav-list a {
+  color: #bbb;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  background-color: #333;
+  color: #fff;
+}

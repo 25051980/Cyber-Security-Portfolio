@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin Panel - Product Management</title>
+    <link rel="stylesheet" href="admin.css" />
+    <link id="theme" rel="stylesheet" href="" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header role="banner" class="site-header">
+      <div class="container">
+        <h1 class="site-title">Admin Panel</h1>
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="/home/index.html" aria-current="page">Home</a></li>
+            <li id="adminLinkContainer"></li>
+            <li id="authButtonContainer"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Admin Panel Area -->
+    <main role="main" class="container admin-panel">
+      <!-- Product Form Section -->
+      <section
+        id="admin-form-section"
+        aria-labelledby="form-section-title"
+        class="admin-section"
+      >
+        <h2 id="form-section-title" class="section-title">
+          Add / Edit Product
+        </h2>
+
+        <form
+          id="product-form"
+          class="product-form"
+          enctype="multipart/form-data"
+          novalidate
+          aria-describedby="form-instructions"
+        >
+          <div class="form-group">
+            <label for="name"
+              >Product Name<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              autocomplete="off"
+              aria-required="true"
+              placeholder="Enter product name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="image"
+              >Select Image<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              required
+              aria-required="true"
+              aria-describedby="imageHelp"
+            />
+            <small id="imageHelp" class="form-help-text"
+              >Upload product image (JPG, PNG, GIF).</small
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="description"
+              >Description<span aria-hidden="true">*</span>:</label
+            >
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+              aria-required="true"
+              placeholder="Describe the product"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="price"
+              >Price ($)<span aria-hidden="true">*</span>:</label
+            >
+            <input
+              type="number"
+              id="price"
+              name="price"
+              step="0.01"
+              min="0"
+              required
+              aria-required="true"
+              placeholder="0.00"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="category"
+              >Category<span aria-hidden="true">*</span>:</label
+            >
+            <select id="category" name="category" required aria-required="true">
+              <option value="" disabled selected>-- Select Category --</option>
+              <option value="Electronics">Electronics</option>
+              <option value="Fitness">Fitness</option>
+              <option value="Books">Books</option>
+            </select>
+          </div>
+
+          <div class="form-group checkbox-group">
+            <input type="checkbox" id="available" name="available" />
+            <label for="available">Available</label>
+          </div>
+
+          <div class="form-group form-actions">
+            <button type="submit" class="btn btn-primary">Save Product</button>
+            <button
+              type="reset"
+              class="btn btn-secondary"
+              aria-label="Reset form"
+            >
+              Reset
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <!-- Product Table Section -->
+      <section
+        id="product-table-section"
+        aria-labelledby="table-section-title"
+        class="admin-section"
+      >
+        <h2 id="table-section-title" class="section-title">
+          Existing Products
+        </h2>
+
+        <div class="table-container">
+          <table
+            id="product-table"
+            class="product-table"
+            role="grid"
+            aria-describedby="product-table-desc"
+            tabindex="0"
+          >
+            <caption id="product-table-desc" class="sr-only">
+              List of products with details and action buttons to edit or
+              delete.
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Image</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price</th>
+                <th scope="col">Category</th>
+                <th scope="col">Available</th>
+                <th scope="col">Actions</th>
+              </tr>
+            </thead>
+            <tbody id="admin-product-list">
+              <!-- Product rows will be dynamically injected via JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Modal Overlay -->
+      <div id="modal-overlay" class="modal-overlay" hidden></div>
+      <!-- Confirmation Modal -->
+      <div
+        id="confirm-modal"
+        class="modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-desc"
+        hidden
+      >
+        <div class="modal-content">
+          <h3 id="modal-title">Confirm</h3>
+          <p id="modal-desc">Are you sure you want to delete this product?</p>
+          <div class="modal-actions">
+            <button id="cancel-btn" class="btn btn-secondary">Cancel</button>
+            <button id="confirm-delete-btn" class="btn btn-danger">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo" class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Samuel's Shop Admin Panel</p>
+      </div>
+    </footer>
+
+    <script src="admin.js" defer></script>
+    <script src="../js/login.js" defer></script>
+  </body>
+</html>

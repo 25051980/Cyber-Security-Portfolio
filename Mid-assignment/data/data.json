@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Wireless Headphones",
+    "image": "../images/wireless-headphones.png",
+    "description": "High-quality sound with noise-cancelling.",
+    "price": 99.99,
+    "category": "Electronics",
+    "available": true
+  },
+  {
+    "name": "Yoga Mat",
+    "image": "../images/yoga-mat.png",
+    "description": "Eco-friendly, non-slip yoga mat.",
+    "price": 29.99,
+    "category": "Fitness",
+    "available": true
+  },
+  {
+    "name": "Smart Watch",
+    "image": "../images/smart-watch.png",
+    "description": "Track fitness, sleep, and notifications.",
+    "price": 149.99,
+    "category": "Electronics",
+    "available": false
+  }
+]
