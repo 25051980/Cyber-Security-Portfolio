@@ -6,7 +6,7 @@ The purpose of this assignment is to demonstrate a comprehensive understanding o
 
 ---
 
-## 🎯 Assignment Overview
+##  Assignment Overview
 
 The final assignment focuses on:
 
@@ -18,7 +18,7 @@ The final assignment focuses on:
 
 ---
 
-## 📂 Contents
+##  Contents
 
 This folder includes:
 
@@ -30,7 +30,7 @@ This folder includes:
 
 ---
 
-## 🧪 Testing Approach
+##  Testing Approach
 
 The testing activities carried out include, where applicable:
 
@@ -43,7 +43,7 @@ The testing activities carried out include, where applicable:
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 Tools and technologies used in this assignment may include:
 
@@ -53,6 +53,6 @@ Tools and technologies used in this assignment may include:
 
 ---
 
-## 📄 Notes
+##  Notes
 
 This work is submitted in accordance with the **Software Testing** module requirements and reflects individual effort.
