@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta configuration for responsive layout and character encoding -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Page title -->
+    <title>Product Showcase</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="index.css" />
+    <link id="theme" rel="stylesheet" href="" />
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <header role="banner" class="site-header">
+      <div class="container">
+        <h1 class="site-title">My Product Store</h1>
+        <nav aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li id="adminLinkContainer"></li>
+            <li id="authButtonContainer"></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Product Showcase Area -->
+    <main role="main" class="container product-panel">
+      <!-- FILTER & SORT SECTION -->
+      <div class="controls-wrapper">
+        <section id="controls" class="container">
+          <!-- Filter by category dropdown -->
+          <div class="filter-group">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+              <option value="all">All</option>
+              <!-- Categories added dynamically -->
+            </select>
+          </div>
+
+          <!-- Sort options dropdown -->
+          <div class="sort-group">
+            <label for="sortSelect">Sort by:</label>
+            <select id="sortSelect">
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
+              <option value="price-asc">Price (Low to High)</option>
+              <option value="price-desc">Price (High to Low)</option>
+            </select>
+          </div>
+        </section>
+      </div>
+
+      <!-- PRODUCT LISTING -->
+      <main class="container">
+        <section id="product-list">
+          <p class="loading">Loading products...</p>
+        </section>
+      </main>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo" class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 My Product Store. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+    <script src="../js/login.js" defer></script>
+  </body>
+</html>
