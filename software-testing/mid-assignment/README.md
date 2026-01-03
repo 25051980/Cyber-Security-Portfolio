@@ -6,7 +6,7 @@ The aim of this assignment is to demonstrate an understanding of fundamental sof
 
 ---
 
-## 📌 Objectives
+## Objectives
 
 - Apply core software testing principles
 - Design and document test cases
@@ -15,7 +15,7 @@ The aim of this assignment is to demonstrate an understanding of fundamental sof
 
 ---
 
-## 📂 Contents
+##  Contents
 
 This folder includes:
 
@@ -26,7 +26,7 @@ This folder includes:
 
 ---
 
-## 🛠️ Tools & Techniques
+##  Tools & Techniques
 
 The following tools and techniques are used where applicable:
 
@@ -38,6 +38,6 @@ The following tools and techniques are used where applicable:
 
 ---
 
-## 📄 Notes
+##  Notes
 
 This work is submitted as part of the **Software Testing** coursework and is organised according to the module guidelines.
