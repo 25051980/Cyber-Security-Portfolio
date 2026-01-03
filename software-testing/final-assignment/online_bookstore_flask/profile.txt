@@ -1,0 +1,49 @@
+         19378 function calls (18548 primitive calls) in 0.009 seconds
+
+   Ordered by: cumulative time
+   List reduced from 926 to 40 due to restriction <40>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.000    0.000    0.009    0.009 /Users/samwalford/Documents/online_bookstore_flask/tools/profile_checkout.py:11(run_flow)
+        2    0.000    0.000    0.006    0.003 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/werkzeug/test.py:1164(post)
+        2    0.000    0.000    0.006    0.003 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/testing.py:204(open)
+        2    0.000    0.000    0.005    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/werkzeug/test.py:1058(open)
+        2    0.000    0.000    0.005    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/werkzeug/test.py:980(run_wsgi_app)
+        2    0.000    0.000    0.005    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/werkzeug/test.py:1226(run_wsgi_app)
+        2    0.000    0.000    0.005    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/app.py:1529(__call__)
+        2    0.000    0.000    0.005    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/app.py:1479(wsgi_app)
+        2    0.000    0.000    0.004    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/app.py:904(full_dispatch_request)
+        2    0.000    0.000    0.003    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/app.py:879(dispatch_request)
+        1    0.000    0.000    0.003    0.003 /Users/samwalford/Documents/online_bookstore_flask/app.py:85(checkout)
+      6/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap>:1002(_find_and_load)
+        1    0.000    0.000    0.003    0.003 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/templating.py:153(render_template_string)
+      6/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap>:967(_find_and_load_unlocked)
+        1    0.000    0.000    0.003    0.003 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/environment.py:1092(from_string)
+        1    0.000    0.000    0.003    0.003 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/environment.py:731(compile)
+      6/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap>:659(_load_unlocked)
+      6/3    0.000    0.000    0.003    0.001 <frozen importlib._bootstrap_external>:844(exec_module)
+        1    0.000    0.000    0.003    0.003 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/app.py:669(test_client)
+        1    0.000    0.000    0.002    0.002 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/environment.py:618(_parse)
+      7/4    0.000    0.000    0.002    0.000 {built-in method builtins.exec}
+      6/3    0.000    0.000    0.002    0.001 <frozen importlib._bootstrap>:220(_call_with_frames_removed)
+        6    0.000    0.000    0.002    0.000 <frozen importlib._bootstrap_external>:916(get_code)
+        2    0.000    0.000    0.001    0.001 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/encodings/__init__.py:70(search_function)
+        2    0.000    0.000    0.001    0.001 {built-in method builtins.__import__}
+        2    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/testing.py:193(_request_from_builder_args)
+       12    0.000    0.000    0.001    0.000 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/re.py:250(compile)
+       12    0.000    0.000    0.001    0.000 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/re.py:289(_compile)
+       11    0.000    0.000    0.001    0.000 /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/sre_compile.py:759(compile)
+    93/52    0.000    0.000    0.001    0.000 {built-in method builtins.next}
+        6    0.000    0.000    0.001    0.000 <frozen importlib._bootstrap_external>:1036(get_data)
+        2    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/testing.py:49(__init__)
+        2    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/werkzeug/test.py:298(__init__)
+        1    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/flask/testing.py:1(<module>)
+        1    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/parser.py:53(__init__)
+        1    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/environment.py:661(_tokenize)
+        1    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/environment.py:457(lexer)
+        1    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/lexer.py:428(get_lexer)
+        1    0.000    0.000    0.001    0.001 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/lexer.py:479(__init__)
+       10    0.000    0.000    0.001    0.000 /Users/samwalford/Documents/online_bookstore_flask/.venv/lib/python3.9/site-packages/jinja2/lexer.py:483(c)
+
+
+
