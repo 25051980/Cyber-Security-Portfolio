@@ -23,4 +23,4 @@ rather than complexity.
 
 ## Learning Outcomes
 Through this assignment, I strengthened my understanding of:
-- Software design and impl
+- Software design and implemantation
