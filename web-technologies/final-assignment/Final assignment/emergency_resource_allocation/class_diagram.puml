@@ -1,0 +1,65 @@
+@startuml class_diagram
+
+class Incident {
+  - id: str
+  - location: int
+  - emergency_type: str
+  - priority: str
+  - required_resources: list
+  - status: str
+  + __init__()
+}
+
+class IncidentManager {
+  - filename: str
+  - incidents: list
+  + add_incident()
+  + close_incident()
+  + update_incident_priority()
+  + save_to_file()
+  + load_from_file()
+}
+
+class Resource {
+  - id: str
+  - type: str
+  - status: str
+  + __init__()
+}
+
+class ResourceManager {
+  - filename: str
+  - resources: list
+  + add_resource()
+  + allocate()
+  + save_to_file()
+  + load_from_file()
+}
+
+class ResourceFactory {
+  + create(): Resource
+}
+
+class Observer {
+  + update()
+}
+
+class ConsoleView {
+  + display_menu()
+  + get_input()
+}
+
+class Controller {
+  + handle_user_input()
+  + route_to_manager()
+}
+
+ConsoleView --> Controller : delegates input
+Controller --> IncidentManager : handles incidents
+Controller --> ResourceManager : handles resources
+IncidentManager --> Incident : manages
+ResourceManager --> Resource : manages
+ResourceFactory --> Resource : creates
+Observer --> Incident : observes
+
+@enduml
