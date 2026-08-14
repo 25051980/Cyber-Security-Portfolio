@@ -1,5 +1,11 @@
 # Penetration Testing & Vulnerability Assessment — Controlled Lab
 
+## 📄 Full Technical Report
+
+The complete MSc assessment report, including methodology, evidence, findings, mitigation and re-testing, is available here:
+
+[View Full Penetration Testing Assessment Report](<CS07018 – Penetration Testing Engagement in a Controlled Lab (1).pdf>)
+
 ## Overview
 
 This project demonstrates a structured penetration testing engagement conducted as part of my MSc in Computer Science with Cyber Security at St Mary's University, Twickenham.
